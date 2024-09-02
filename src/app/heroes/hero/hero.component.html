@@ -1,0 +1,29 @@
+<dl>
+
+    <td>nombre:</td>
+    <dd>{{name}}</dd>
+
+    <td>edad:</td>
+    <dd>{{age}}</dd>
+
+    <td>metodo:</td>
+    <dd>{{HeroDescription}}</dd>
+
+    <td>capitalizado:</td>
+    <dd>{{capitalizedName}}</dd>
+
+</dl>
+
+<button  *ngIf="name !=='dead poll'" (click)="changeHero()" class="btn btn-primary mx-2">
+    cambiar nombre
+</button>
+
+<button *ngIf="age !==25" (click)="changeAge()" class="btn btn-primary">
+    cambiar edad
+</button>
+
+
+<button  (click)="resertForm()" 
+class="btn btn-primary mx-2">
+    resert
+</button>
